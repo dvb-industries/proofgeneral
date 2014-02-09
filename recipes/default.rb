@@ -9,8 +9,6 @@ end
 execute "tar xvfz ProofGeneral" do
   cwd node[:proofgeneral][:dir]
   command "tar xvfz #{node[:proofgeneral][:package]}"
-  user node[:proofgeneral][:user]
-  group node[:proofgeneral][:group]
   creates "ProofGeneral"
 end
 
